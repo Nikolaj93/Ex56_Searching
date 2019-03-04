@@ -216,11 +216,11 @@ namespace UnitTestProject1
             int[] data = { };
             int value = 9;
             int expectedPosition = -1;
-            // Act
+            // Act  
             int foundPosition = Search.FindPositionInList_Binary(data, value);
             // Assert
             Assert.AreEqual(expectedPosition, foundPosition);
         }
-
+            
     }
 }
