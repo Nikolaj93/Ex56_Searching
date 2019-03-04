@@ -10,7 +10,9 @@ namespace Ex56_Searching
             for (int i = 0; i < n; i++)
             {
                 if (data[i] == value)
+                {
                     return i;
+                }   
             }
             return -1;
         }
@@ -24,15 +26,19 @@ namespace Ex56_Searching
 
                 // Check if value is present at mid
                 if (data[mid] == value)
+                {
                     return mid;
-
+                } 
                 // If value greater, ignore left half 
                 if (data[mid] < value)
+                {
                     low = mid + 1;
-
+                }
                 // If value is smaller, ignore right half
                 else
+                {
                     high = mid - low;
+                }
             }
             return -1;
         }
